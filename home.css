@@ -1,0 +1,218 @@
+
+
+.two
+{
+    background-image: url('images12.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    background-color: antiquewhite;
+}
+header {
+    background-color: #4cafa8;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+.content-section {
+    display: none;
+    padding: 20px;
+}
+.pic
+{
+    height:100px;
+    width:100px;
+}
+
+.box
+{
+border-color:default;
+border-width:0px;
+
+}
+.pic img{
+
+    height:200px;
+    width:200px;
+    border-radius: 3px;
+    border-color: transparent;
+    border-style: solid;
+;
+}
+.pic{
+    
+    display:flex;
+    justify-content: space-around;
+    padding-left: 350px;
+    padding-top: 60px;
+    padding-bottom: 10%;
+
+    
+}
+img:hover{
+    transform:scale(1.1);
+}
+
+
+#home h2 {
+    margin-top: 50px;
+    font-size: 3em;
+}
+
+#home p {
+    font-size: 1.5em;
+}
+
+#home h3{
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #4cafa8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #45a049;
+}
+
+.job-listings {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.job-listing {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#about p {
+    font-size: 18pt;
+}
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+#details  {
+    font-size: 18pt;
+}
+
+#job-posting {
+    font-size: 18pt;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4cafa8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4cafa8;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.team-member {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.team-member h3 {
+    margin: 15px 0 5px;
+}
+.team-member p {
+    color: #555;
+}
+

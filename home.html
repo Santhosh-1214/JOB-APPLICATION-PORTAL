@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Portal</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <h1>Job Application Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('jobs')">Jobs</a></li>
+                <li><a href="#" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#" onclick="showSection('details')">Details</a></li>
+                <li><a href="#" onclick="showSection('jobPosting')">Job Posting</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="content-section" style="display:none;">
+            <h2>Welcome to the Job Application Portal</h2>
+            <p><i>Your Future Starts Here<br>
+                Connecting Talent with Opportunity<br>
+                Find Your Dream Job Today</i></p>
+            <form id="LoginForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Submit</button>
+            </form>
+        
+        
+    
+        
+            <div class="pic">
+                <div class="box">
+                    <img src="homeimage1.jpg" alt="image1">
+                </div>
+                <div class="box">
+                    <img src="homeimage2.jpg" alt="image2">
+                </div>
+                <div class="box">
+                    <img src="homeimage_3.jpg" alt="image3">
+                </div>
+                <div class="box">
+                    <img src="homeimage3.jpg" alt="image4">
+                </div>
+            </div> 
+        </section>
+       
+            
+
+        <section id="jobs" class="content-section" style="display:none;">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search for jobs...">
+                <button onclick="searchJobs()">Search</button>
+            </div>
+            <div class="job-listings" id="jobListings">
+                <h2>Job Listings</h2>
+                <!-- Job items will be inserted here by JavaScript -->
+            </div>
+        </section>
+        <i>
+        <section id="about" class="content-section" style="display:none;">
+            <section id="company-history">
+                <h2>Our History</h2>
+                <p>Founded in 2010, Job Application Portal has been connecting talented individuals with top companies for over a decade. Our journey started with a small team and a big vision to make job searching and hiring easier and more efficient.</p>
+            </section>
+    
+            <section id="mission">
+                <h2>Our Mission</h2>
+                <p>Our mission is to bridge the gap between job seekers and employers by providing a user-friendly platform that simplifies the application process and enhances the recruitment experience.</p>
+            </section>
+    
+            <section id="team">
+                <h2>Meet the Team</h2>
+                <div class="card-container">
+                    <div class="team-member">
+                        <img src="team1.jpg" alt="John Doe">
+                        <h3>John Doe</h3>
+                        <p>CEO & Founder</p>
+                        <p>John is the visionary behind Job Application Portal, leading the company with his expertise in technology and business strategy.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="team2.jpg" alt="Jane Smith">
+                        <h3>Jane Smith</h3>
+                        <p>Chief Operating Officer</p>
+                        <p>Jane oversees the daily operations, ensuring that our platform runs smoothly and efficiently.</p>
+                    </div>
+                </div>
+                <!-- Add more team members as needed -->
+            </section>
+    
+            <section id="contact-info">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or need further information, feel free to contact us:</p>
+                <p>Email: info@jobportal.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <p>Address: 1234 Job St, Employment City, EC 56789</p>
+            </section>
+        </section>
+
+        <section id="details" class="content-section" style="display:none;">
+            <h3>Job Description</h3>
+            <p>We are looking for a skilled Developer to join our team. You will be responsible for implementing visual elements that users see and interact with in a web application. You will work closely with our backend developers and designers to bridge the gap between graphical design and technical implementation.</p>
+            <h3>Requirements</h3>
+            <ul>
+                <li>Proven work experience as a Developer</li>
+                <li>Experience with JavaScript, CSS, and HTML</li>
+                <li>Understanding of web design principles</li>
+                <li>Good problem-solving skills</li>
+                <li>BSc degree in Computer Science or relevant field</li>
+            </ul>
+            <h3>Benefits</h3>
+            <ul>
+                <li>Competitive salary</li>
+                <li>Health insurance</li>
+                <li>Paid time off</li>
+                <li>Professional development opportunities</li>
+            </ul>
+        </section>
+    </i>
+
+        <section id="jobPosting" class="content-section" style="display:block;">
+            <h1>Job Applications</h1>
+            <form id="jobApplicationForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="experience">Years of Experience:</label>
+                <input type="number" id="experience" name="experience" required>
+
+                <label for="tenthPercentage">10th Percentage:</label>
+                <input type="number" id="tenthPercentage" name="tenthPercentage" required>
+
+                <label for="twelfthPercentage">12th Percentage:</label>
+                <input type="number" id="twelfthPercentage" name="twelfthPercentage" required>
+
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" required>
+    
+                <label for="position">Position Applied For:</label>
+                <input type="text" id="position" name="position" required>
+    
+                <button type="submit">Submit Application</button>
+            </form>
+            <section id="result" ></section>
+        </section> 
+
+        <section id="contact" class="content-section" style="display:none;">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"> 
+    </script>
+    
+</body>
+</html>
